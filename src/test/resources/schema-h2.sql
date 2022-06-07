@@ -1,0 +1,37 @@
+--drop table if exists hotel_information CASCADE;
+--
+--drop table if exists hotel_inventory_contact_numbers CASCADE;
+--
+--drop table if exists rooms_tbl CASCADE;
+--
+--create table hotel_information (
+--       hotel_id integer not null,
+--        address varchar(255),
+--        description varchar(255),
+--        name varchar(255),
+--        primary key (hotel_id)
+--    );
+--
+--create table hotel_inventory_contact_numbers (
+--       hotel_inventory_hotel_id integer not null,
+--        contact_numbers bigint
+--    );
+--
+--create table rooms_tbl (
+--       room_number integer not null,
+--        booked_from date,
+--        booked_until date,
+--        room_type varchar(255),
+--        hotel_id integer,
+--        primary key (room_number)
+--    );
+--
+--alter table hotel_inventory_contact_numbers
+--       add constraint FKm4ag6lwi4i824ruy8i6ujmprl
+--       foreign key (hotel_inventory_hotel_id)
+--       references hotel_information;
+--
+--alter table rooms_tbl
+--       add constraint FK6mylype46xqo8ebsnkfm0hubr
+--       foreign key (hotel_id)
+--       references hotel_information;
